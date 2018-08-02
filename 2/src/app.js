@@ -11,10 +11,10 @@ var output = getNthElement([1, 3, 5], 1);
 console.log(output); // --> 3 */ 
 
 const arr1 = [1, 3, 5];
-const num = 1;
-function getNthElement([arr1], num, arr2){
+const num = arr1[1];
+function getNthElement([arr1], num){
   if (num === 0){
     return undefined;
   }
-  return arr1[num];
+  return num;
 }
