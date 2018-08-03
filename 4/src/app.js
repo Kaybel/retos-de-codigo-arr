@@ -6,19 +6,19 @@ Ejemplo de entrada:
 
 var output = areValidCredentials('Ritu', 'mylongpassword');
 console.log(output); // --> true
-*/ 
+*/
 
-function areValidCredentials (name, password) { 
+function areValidCredentials(name, password) {
   if (name.length > 3) {
     return true;
-    }
-  else if(name.length < 3) {
+  }
+  else if (name.length < 3) {
     return false;
   }
-  else if(password.length > 8) {
+  else if (password.length > 8) {
     return true;
-  } 
-  else if (password.length < 8){
+  }
+  else if (password.length < 8) {
     return false;
   }
 };

@@ -34,6 +34,6 @@ function dividirCadena(cadenaADividir,separador) {
 let output = ["string  with  double  spaces"];
 let outNoSpaces = output.join("");
 let spaces = " "
-function convertDoubleSpaceToSingle (outNoSpaces, spaces) {
-  outNoSpaces.split(spaces); 
+function convertDoubleSpaceToSingle(outNoSpaces, spaces) {
+  outNoSpaces.split(spaces);
 } 

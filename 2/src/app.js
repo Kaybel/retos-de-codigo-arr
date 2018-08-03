@@ -8,12 +8,12 @@ Si el arreglo tiene una longitud de 0, debería devolver' undefined'.
 Ejemplo de entrada:
 
 var output = getNthElement([1, 3, 5], 1);
-console.log(output); // --> 3 */ 
+console.log(output); // --> 3 */
 
 const arr1 = [1, 3, 5];
 const num = arr1[1];
-function getNthElement([arr1], num){
-  if (num === 0){
+function getNthElement([arr1], num) {
+  if (num === 0) {
     return undefined;
   }
   return num;
