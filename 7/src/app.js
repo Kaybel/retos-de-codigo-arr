@@ -12,26 +12,19 @@ Ejemplo:
 
 var output = findShortestWordAmongMixedElements([4, 'two', 2, 'three']);
 console.log(output); // --> 'two'
- */ 
+ */
 
 const arr = [4, 'two', 2, 'three'];
+
 const arrVacio = [];
 
 function findShortestWordAmongMixedElements(arr) {
-  for( let i = 0; i < arr.length; i++){
-    if(arr[i].typeof(string)){
+  if (arr.length === 0 || typeof (arr.length) != 'string') {
+    return "";
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof (arr[i]) === 'string') {
       arrVacio.push(arr[i]);
-      const arr2 = [];
-      for(let j = 0; j < arrVacio.length; j++){
-        let arj = arrVacio[j];
-        for(let k = j; k < arrVacio.length; k++){
-          let ark = arrVacio[k];
-          if(arj < ark){
-            arr2.push(arj);
-          }
-        }
-      }
     }
   }
-  return arr2;
 }
