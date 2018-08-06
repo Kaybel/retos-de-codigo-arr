@@ -2,4 +2,4 @@
 // console.log(output);
 
 const dosFrasesLargo = ["code", "programs"];
-const output = dosFrasesLargo.reduce((previousValue, currentValue) => ((previousValue + currentValue) % 2).length);
+const output = dosFrasesLargo.reduce((previousValue, currentValue) => ((previousValue + currentValue) / 2).length);

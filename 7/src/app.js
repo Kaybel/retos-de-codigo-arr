@@ -22,9 +22,4 @@ function findShortestWordAmongMixedElements(arr) {
   if (arr.length === 0 || typeof (arr.length) != 'string') {
     return "";
   }
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof (arr[i]) === 'string') {
-      arrVacio.push(arr[i]);
-    }
-  }
 }
